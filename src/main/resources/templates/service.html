@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--<link rel="stylesheet" href="../../css/validatortest/bootstrap.css"/>-->
+    <link href="../../css/bootstrap/bootstrap.css"  rel="stylesheet" >
+    <link rel="stylesheet" href="../../css/validatortest/bootstrapValidator.css"/>
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-switch/4.0.0-alpha.1/css/bootstrap-switch.css">-->
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <!--<script th:src="@{/js/bootstrap.min.js}"></script>-->
+    <script th:src="@{/js/bootstrap3.3.7.js}"></script>
+    <script th:src="@{/js/jquery-ui.js}"></script>
+    <!--<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap-switch/4.0.0-alpha.1/js/bootstrap-switch.js"></script>-->
+
+    <script th:src="@{/js/validatortest/bootstrapValidator.js}"></script>
+    <!--<script type="text/javascript" src="../../js/validatortest/bootstrapValidator.js"></script>-->
+    <script th:src="@{/js/avalon.js}"></script>
+    <script th:src="@{/js/myscript.js}"></script>
+    <script th:src="@{/js/service_management.js}" ></script>
+
+    <!--<script th:src="@{/js/main.js}"></script>-->
+
+
+
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+
+</script>
+
+<!-- Page Header -->
+<div th:include="header"></div>
+
+<!-- Page Content -->
+<div class="container-fluid" >
+
+    <div class="row" >
+
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div th:include="sidebar"></div>
+        </nav>
+
+
+        <!--<main role="main" class="col-md-9 col-lg-10 px-4" style="margin-left: 5%;">-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div th:include="service_management" ></div>
+        </main>
+    </div>
+</div>
+
+<!-- Page Footer -->
+<div th:include="footer"></div>
+
+
+
+
+</body>
+</html>

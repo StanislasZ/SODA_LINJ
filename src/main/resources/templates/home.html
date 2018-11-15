@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script th:src="@{/js/avalon.js}"></script>
+    <!--<link th:href="@{/css/bootstrap/bootstrap.min.css}" rel="stylesheet" >-->
+    <!--<link th:href="@{/css/main/dashboard.css}" rel="stylesheet" >-->
+    <script language="javascript" type="text/javascript">
+        // 以下方式直接跳转
+        window.location.href='/html/home/student';
+        console.log('88888');
+        // 以下方式定时跳转
+        //setTimeout("javascript:location.href='hello.html'", 5000);
+    </script>
+</head>
+
+<body>
+
+<!-- Page Header -->
+<!--<div th:include="header"></div>-->
+
+<!--&lt;!&ndash; Page Content &ndash;&gt;-->
+<!--<div class="container-fluid wrapper">-->
+    <!--<div class="row">-->
+        <!--<nav class="col-md-2 d-none d-md-block bg-light sidebar" id="sidebar">-->
+            <!--<div th:include="sidebar"></div>-->
+        <!--</nav>-->
+
+        <!--<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">-->
+            <!--<div th:include="job_list"></div>-->
+        <!--</main>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Page Footer &ndash;&gt;-->
+<!--<div th:include="footer"></div>-->
+
+
+</body>
+
+</html>

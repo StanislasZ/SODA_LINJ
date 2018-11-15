@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="../../css/bootstrap/bootstrap.css"  rel="stylesheet" >
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <!--<script th:src="@{/js/bootstrap.min.js}"></script>-->
+    <script th:src="@{/js/bootstrap3.3.7.js}"></script>
+    <script th:src="@{/js/jquery-ui.js}"></script>
+    <!--<script th:src="@{/js/trace/js/jquery.min.js}"></script>-->
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=53oVIOgmSIejwV7EfphPgTynOZbIiVYu"></script>-->
+    <!--<script th:src="@{/js/trace/echarts/echarts.js}"></script>-->
+    <!--<script th:src="@{/js/trace/js/require.js}"></script>-->
+    <!--<script th:src="@{/js/trace/js/example2.js}"></script>-->
+    <script th:src="@{/js/student/student.js}" ></script>
+    <script src="./echarts/echarts.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=53oVIOgmSIejwV7EfphPgTynOZbIiVYu"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/require.js"></script>
+    <script src="./js/example2.js"></script>
+
+    <script type="text/javascript">
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+
+</script>
+
+<!-- Page Header -->
+<div th:include="header"></div>
+
+<!-- Page Content -->
+<div class="container-fluid" >
+
+    <div class="row" >
+
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div th:include="sidebar"></div>
+        </nav>
+
+
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <!--<main role="main">-->
+            <!--<div th:include="student_management" ></div>-->
+            <div th:include="test" ></div>
+
+
+            <!--<h3>1234567891234567895566</h3>-->
+            <!--<div id="main" style="margin-left: 40px;height:600px;"></div>-->
+
+
+
+
+
+
+        </main>
+    </div>
+</div>
+
+<!-- Page Footer -->
+<div th:include="footer"></div>
+
+
+
+
+</body>
+</html>

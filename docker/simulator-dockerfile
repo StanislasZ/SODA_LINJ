@@ -1,0 +1,10 @@
+FROM java:openjdk-8-alpine
+
+COPY simulator.jar /tmp/simulator.jar
+
+ENV SIMULATOR_HOME /usr/local/fcp-simulator
+
+EXPOSE 9090
+
+ENTRYPOINT ["java", "-jar", "/tmp/simulator.jar"]
+

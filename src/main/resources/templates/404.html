@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>404</title>
+    <script th:src="@{/js/avalon.js}"></script>
+    <style>
+        #myp1{
+            font-size: medium;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<!-- Page Header -->
+<div th:include="header"></div>
+
+<!-- Page Content -->
+<div class="container-fluid" >
+
+    <div class="row" >
+
+        <main role="main" class="col-md-9 col-lg-10 px-4" style="margin-left: 8%;">
+            <div align="center">
+                <div style="height: 45px"></div>
+                <img src="/image/404.jpg">
+                <p id="myp1" style="color: #818182;">The page you are looking for is not here.
+                <br>
+                    Why don't you try the <a href="/html/home">homepage</a> ?
+
+                </p>
+
+
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Page Footer -->
+<div th:include="footer"></div>
+
+
+
+
+
+</body>
+</html>
