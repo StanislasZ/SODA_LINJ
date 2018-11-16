@@ -23,17 +23,7 @@ public class HomeController extends BasicController {
         return "home";
     }
 
-//    @RequestMapping("/home/service")
-//    public String service_management(Model model){
-//
-//        return "service";
-//    }
 
-//    @RequestMapping("/home/log")
-//    public String log_management(Model model){
-//
-//        return "log";
-//    }
 
 
     @RequestMapping("/home/student")
@@ -41,6 +31,10 @@ public class HomeController extends BasicController {
 
         return "student";
     }
+
+
+
+
 
     @RequestMapping("/home/police")
     public String police_management(Model model){

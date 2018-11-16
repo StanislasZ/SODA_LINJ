@@ -8,22 +8,80 @@
         }
         #main {
             height: 100%;
-
+        }
+        #main_police{
+            height: 100%;
+        }
+        #main_initial{
+            height: 100%;
+        }
+        #student_generate{
+            height: 100%;
         }
     </style>
-    <script src="./echarts/echarts.js"></script>
+    <script src="./main/echarts/echarts.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=53oVIOgmSIejwV7EfphPgTynOZbIiVYu"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/require.js"></script>
-    <script src="./js/example2.js"></script>
+    <script src="./main/js/jquery.min.js"></script>
+    <script src="./main/js/require.js"></script>
+    <script src="./main/js/example2.js"></script>
+
+
+
+    <script src="./main_initial/js/example2_initial.js"></script>
+    <script src="./student_generate/js/example2_stu_generate.js"></script>
+    <script src="./student_road/js/example2_stu_road.js"></script>
+    <script src="./police_fastest/js/example2_police_fastest.js"></script>
+
+
+
+
+    <!-- ************************************************-->
+
 
 </head>
 <body>
-<h3>12345678912345678955667788</h3>
+<div class="input-group mb-3" style="margin-top: 10px;margin-left: 55px">
+    <div class="input-group-prepend">
+        <span class="input-group-text" style="display:block; width: 70px; float:left; text-align:right;">起点:</span>
+    </div>
+    <input type="text" class="form-control" name="start_location" id="start_location">
+    <div class="input-group-prepend">
+        <span class="input-group-text" style="display:block; width: 70px; float:left; text-align:right;">终点:</span>
+    </div>
+    <input type="text" class="form-control" name="end_location" id="end_location">
+    <!--<button type="button" id="btn_location" class="btn btn-primary" onclick="">提交</button>-->
 
 
 
-<div id="main" style="margin-left: 60px;height: 250px;"></div>
+</div>
+
+
+<!--<div style="margin-left: 50px;">-->
+    <!--<img id="noinfo" src="/image/soda/noinfo.PNG" style="width: 1000px;height: 400px;">-->
+    <!--<img id="checkroad" src="/image/soda/student_busy.PNG" style="width: 1000px;height: 400px;display: none">-->
+    <!--<img id="police_road_condition" src="/image/soda/police_road_condition.PNG" style="width: 1000px;height: 400px;">-->
+
+<!--</div>-->
+
+<!-- 初始地图，无任何标记-->
+<div  id="main_initial" style="position: absolute;top: 110px;left:70px; z-index:5"></div>
+
+
+
+<!-- 警用 道路信息-->
+<div  id="main" style="position: absolute;top: 110px;left:70px; z-index:4"></div>
+<!-- 学生 安全路线生成-->
+<div  id="student_generate" style="position: absolute;top: 110px;left:70px; z-index:3"></div>
+<!-- 学生 安全路线生成-->
+<div  id="student_road" style="position: absolute;top: 110px;left:70px; z-index:2"></div>
+
+<!-- 警用_最速路线-->
+<div  id="police_fastest" style="position: absolute;top: 110px;left:70px; z-index:1"></div>
+
+
+
+
+
 
 
 </body>

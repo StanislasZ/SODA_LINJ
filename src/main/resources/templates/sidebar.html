@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
 <head>
-    <!--<script th:src="@{/js/sidebar.js}" ></script>-->
+    <script th:src="@{/js/sidebar.js}" ></script>
     <link th:href="@{/css/sidebar.css}" rel="stylesheet" >
     <style type="text/css">
         .first_class_menu{
@@ -29,31 +29,31 @@
                 style="font-size: large">
                 <span data-feather="user"></span>学生用
             </a>
-            <a id="sidebar_roadcheck_a" class="nav-link" th:href="@{/html/home/student}">
-                <span data-feather="user"></span>&nbsp&nbsp&nbsp&nbsp路况查询
+            <a id="sidebar_roadcheck_a" class="nav-link"  href="javascript:stu_road()">
+                &nbsp&nbsp&nbsp&nbsp&nbsp<span data-feather="eye"></span>路况查询
             </a>
-            <a id="sidebar_safe_generate_a" class="nav-link" th:href="@{/html/home/student}">
-                <span data-feather="user"></span>&nbsp&nbsp&nbsp&nbsp安全路线生成
+            <a id="sidebar_safe_generate_a" class="nav-link" href="javascript:stu_generate()">
+                &nbsp&nbsp&nbsp&nbsp&nbsp<span data-feather="plus-square"></span>安全路线生成
             </a>
 
 
         </li>
 
         <li class="nav-item">
-            <a id="sidebar_police_a" class="nav-link active first_class_menu" th:href="@{/html/home/police}"
+            <a id="sidebar_police_a" class="nav-link first_class_menu" th:href="@{/html/home/student}"
                style="font-size: large">
                 <span data-feather="user"></span>
                 警用
                 <!--<span class="sr-only">(current)</span>-->
             </a>
-            <a id="sidebar_roadcheck2_a" class="nav-link" th:href="@{/html/home/student}">
-                <span data-feather="user"></span>&nbsp&nbsp&nbsp&nbsp路况查询
+            <a id="sidebar_roadcheck2_a" class="nav-link" href="javascript:checkRoad()">
+                &nbsp&nbsp&nbsp&nbsp&nbsp<span data-feather="eye"></span>路况查询&派遣方案
             </a>
-            <a id="sidebar_deploy_a" class="nav-link" th:href="@{/html/home/student}">
-                <span data-feather="user"></span>&nbsp&nbsp&nbsp&nbsp派遣方案
-            </a>
-            <a id="sidebar_maxv_a" class="nav-link" th:href="@{/html/home/student}">
-                <span data-feather="user"></span>&nbsp&nbsp&nbsp&nbsp最速路线生成
+            <!--<a id="sidebar_deploy_a" class="nav-link" th:href="@{/html/home/student}">-->
+                <!--&nbsp&nbsp&nbsp&nbsp&nbsp<span data-feather="send"></span>派遣方案-->
+            <!--</a>-->
+            <a id="sidebar_maxv_a" class="nav-link" href="javascript:police_generate()">
+                &nbsp&nbsp&nbsp&nbsp&nbsp<span data-feather="plus-square"></span>最速路线生成
             </a>
         </li>
 
